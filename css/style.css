@@ -1,6 +1,3 @@
-html, body{
-    height: 100%;
-}
 .login-body {
     display: flex;
     flex-direction: column;
@@ -65,7 +62,7 @@ html, body{
 .navbar{
     display: flex;
     width: 100%;
-    height: 10em;
+    height: auto;
     border-bottom: solid #dddddd;
 }
 .img{
@@ -76,8 +73,7 @@ html, body{
 .texte1{
     display: flex;
     margin: auto;
-    margin-left: 10%;
-    
+    margin-left: 50%;
 }
 
 .login-container{
@@ -94,25 +90,21 @@ html, body{
     height: 5em;
     cursor: pointer;
 }
-.section{
-    display: grid;
-    margin-left: 10%;
-}
 .Article{
     display: flex;
-    flex-direction: row;
-    width: 60%;
+    width: 90%;
     height: auto;
-    padding: 5em;
-    margin-top: 3em;
-    margin: 5em;
+    padding: 3em;
+    margin: auto;
+    margin-top: 2em;
     border: solid #e4e4e4;
-
+    position: relative;
 }
 footer{
     display: flex;
     width: 100%;
     height: auto;
+    margin-top: 2em;
     background-color: #e4e4e4;
     justify-content: space-around;
 }
@@ -129,6 +121,7 @@ footer{
 .texte2{
     padding: 5em;
     text-decoration: none;
+    font-size: 25px;
     color: black;
 }
 
@@ -153,7 +146,6 @@ tfoot {
 }
 
 .joueur-table{
-    margin-left: 15em;
     margin-top: 3em;
     margin-bottom: 3em;
 }
@@ -162,9 +154,52 @@ tfoot {
     width: 30em;
     height: auto;
     position: absolute;
-    right: 2em;
-    top: 20%;
+    right: 10em;
+    top: 60%;
 }
 .commentaire-joueur{
     display: flex;
+}
+.labels-container {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    display: flex;
+    gap: 5em;
+}
+
+.labels-container a {
+    display: block;
+}
+.link1, .link2 {
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+.commentaires-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-left: 15em;
+}
+.commentaire{
+    display: flex;
+    width: 60%;
+    height: auto;
+    padding: 2em;
+    align-items: center;
+}
+.img-comm{
+    display: flex;
+    width: 4em;
+    padding-right: 2em;
+}
+
+.img-article{
+    display: flex;
+    width: auto;
+    height: 20em;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="LogIn">
@@ -12,18 +12,18 @@
     <header>
         <nav>
             <div class="image-container">
-                <a href="home.html"><img src="../images/logo.png" class="image-size" alt="Logo"></a>
+                <a href="home.html"><img src="../images/logo.png" class="image-size" alt="Logo de l'entreprise"></a>
             </div>
         </nav>
     </header>
     <main class="login-main">
-        <div class="login-card">
-            <h1 class="login-card-title">Se connecter</h1>
+        <div class="login-card" id="main-content">
+            <h1 class="login-card-title" tabindex="0">Se connecter</h1>
             <form action="home.html">
                 <label for="email">Email:</label>
-                <input id="email" required type="email" autofocus autocomplete="username">
+                <input id="email" name="email" required type="email" autocomplete="username">
                 <label for="password">Mot de passe:</label>
-                <input id="password" required type="password" autocomplete="current-password">
+                <input id="password" name="password" required type="password" autocomplete="current-password">
                 <button type="submit">Valider</button>
             </form>
         </div>
