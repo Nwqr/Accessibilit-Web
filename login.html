@@ -10,21 +10,26 @@
 </head>
 <body class="login-body">
     <header>
-        <nav>
+        <nav aria-label="Navigation principale">
             <div class="image-container">
-                <a href="home.html"><img src="logo.png" class="image-size" alt="Logo de l'entreprise"></a>
+                <a href="home.html" aria-label="Retour à la page d'accueil">
+                    <img src="logo.png" class="image-size" alt="Logo de l'entreprise">
+                </a>
             </div>
         </nav>
     </header>
     <main class="login-main">
-        <div class="login-card" id="main-content">
-            <h1 class="login-card-title">Se connecter</h1>
-            <form action="home.html">
-                <label for="email">Email:</label>
-                <input id="email" name="email" required type="email" autocomplete="username">
-                <label for="password">Mot de passe:</label>
-                <input id="password" name="password" required type="password" autocomplete="current-password">
-                <button type="submit">Valider</button>
+        <div class="login-card" id="main-content" aria-labelledby="login-title">
+            <h1 id="login-title" class="login-card-title">Se connecter</h1>
+            <form action="home.html" aria-labelledby="form-title">
+                <fieldset>
+                    <legend id="form-title">Formulaire de connexion</legend>
+                    <label for="email">Email :</label>
+                    <input id="email" name="email" required type="email" autocomplete="username" aria-required="true">
+                    <label for="password">Mot de passe :</label>
+                    <input id="password" name="password" required type="password" autocomplete="current-password" aria-required="true">
+                    <button type="submit">Valider</button>
+                </fieldset>
             </form>
         </div>
     </main>
